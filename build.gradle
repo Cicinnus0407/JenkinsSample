@@ -37,11 +37,11 @@ android {
                         if (outputFile != null && outputFile.name.endsWith('.apk')) {
                             //如果不是jenkins就不用修改路径
                             if("false".equals(IS_JENKINS)){
-                                def fileName = "DianJianbao_${defaultConfig.versionName}_${releaseTime()}_${variant.flavorName}.apk"
+                                def fileName = "apkName_${defaultConfig.versionName}_${releaseTime()}_${variant.flavorName}.apk"
                                 output.outputFile = new File(outputFile.parent, fileName)
                             }else {
-                                def fileName = "DianJianbao_${RELEASE_TIME}_${APP_VERSION}_${PRODUCT_FLAVOR}.apk"
-                                //服务器上的路径
+                                def fileName = "apkName_${RELEASE_TIME}_${APP_VERSION}_${PRODUCT_FLAVOR}.apk"
+                                //Jenkins输出路径
                                 output.outputFile = new File("D:/upload/dianjianbao/apk", fileName)
                             }
                         }
