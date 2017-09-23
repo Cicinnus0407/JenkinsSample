@@ -68,19 +68,15 @@ android {
     productFlavors {
         offical {
             manifestPlaceholders = [CHANNEL: "OFFICAL"]
-            manifestPlaceholders = [JPUSH_CHANNEL: "OFFICAL"]
         }
         xiaomi {
             manifestPlaceholders = [CHANNEL: "XIAOMI"]
-            manifestPlaceholders = [JPUSH_CHANNEL: "XIAOMI"]
         }
         yingyongbao {
             manifestPlaceholders = [CHANNEL: "YINGYONGBAO"]
-            manifestPlaceholders = [JPUSH_CHANNEL: "YINGYONGBAO"]
         }
         baidu {
             manifestPlaceholders = [CHANNEL: "BAIDU"]
-            manifestPlaceholders = [JPUSH_CHANNEL: "BAIDU"]
         }
     }
 }
